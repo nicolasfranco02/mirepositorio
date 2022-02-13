@@ -1,7 +1,14 @@
 * {
   margin: 0%;
 }
-.main {
+body {
+  background-image: url(fondodepantallaprincipal.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/*.main {
   border: solid 1px black;
   display: grid;
   grid-template-areas:
@@ -36,25 +43,19 @@
   height: 35px;
   width: 50px;
   transition:all 1s ease;
-}
+}*/
 .article {
   grid-area: article;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 20px;
   color: white;
 }
-form {
+/*form {
   grid-area: formulario;
   align-items: center;
-}
+}*/
 .footer {
-  grid-area: footer;
-  background-color: transparent;
   color: bisque;
-  font-size: 25px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  background-size: 100%;
-  text-align: center;
   transition: all 1s ease;
 }
 .icono {
@@ -64,13 +65,14 @@ form {
   margin: 5px;
 }
 .fotodeviaje {
-  width: 150px;
-  height: 150px;
-  transition: all 0.5s linear;
+  width: 360px;
+  height: 360px;
+ /*transition: all 0.5s linear;*/
 }
-.opciones:hover{
+/*.opciones:hover{
   background-color: black;
-}
+}*/
+
 .footer:hover{
   background-color: black;
 }
@@ -87,7 +89,7 @@ form {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-  .logo {
+  /*.logo {
     height: 200px;
     width: 200px;
   }
@@ -239,4 +241,4 @@ form {
   width: 500px;
   height: 400px;
 }
-}
+}*/
