@@ -8,6 +8,17 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+H2{
+  margin-top: 30PX;
+  margin-left: 20px;
+}
+.navbar{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+p{
+  margin-left: 15px;
+}
 /*.main {
   border: solid 1px black;
   display: grid;
@@ -55,6 +66,7 @@ body {
   align-items: center;
 }*/
 .footer {
+  margin-top: 100PX;
   color: bisque;
   transition: all 1s ease;
 }
@@ -89,10 +101,10 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-  /*.logo {
+  .logo {
     height: 200px;
     width: 200px;
-  }
+  }/*
   .header {
     grid-area: header;
     text-align: center;
