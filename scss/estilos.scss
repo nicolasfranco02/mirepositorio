@@ -1,0 +1,92 @@
+@import "_variables";
+$menu: (
+  inicio: rgb(226, 92, 92),
+  viajes: red,
+  contacto: blue,
+);
+* {
+  margin: 0%;
+}
+body {
+  background-color: $fondodepantalla;
+}
+.navbar {
+  font-size: $letranav;
+  background-color: transparent !important;
+  .nav-link {
+    margin-left: $margen;
+    &:hover {
+      background-color: black;
+      border-radius: 20px;
+    }
+  }
+}
+@mixin fuente {
+  color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+.nav-link {
+  background-color: map-get($menu, inicio);
+}
+article {
+  @include fuente;
+  margin-left: $margen;
+}
+p {
+  @include fuente;
+  margin-left: $margen;
+}
+.texto {
+  @include fuente;
+}
+H3 {
+  @include fuente;
+  font-size: 30px;
+}
+
+h2 {
+  color: aliceblue;
+  margin-top: 25px;
+  font-size: $tamanotitulo;
+  margin-left: 70px;
+}
+.botton {
+  font-size: 25px;
+  text-decoration: none;
+  border-color: black;
+  margin-left: 40%;
+  &:hover {
+    background-color: black;
+    color: blanchedalmond;
+    border-radius: 30px;
+  }
+}
+.fotos {
+  margin-left: 40%;
+}
+.fotolujan {
+  width: 360px;
+  height: 360px;
+}
+.fotodeviaje {
+  @extend .fotolujan;
+  &:hover {
+    width: 600px;
+    height: 500px;
+  }
+}
+.footer {
+  margin-top: 100px;
+  color: bisque;
+  transition: all 1s ease;
+  &:hover {
+    background-color: black;
+  }
+}
+.icono {
+  height: 70px;
+  width: 70px;
+  padding: 5px;
+  margin: 5px;
+}
