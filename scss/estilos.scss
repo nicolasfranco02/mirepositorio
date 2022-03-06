@@ -2,15 +2,12 @@
 * {
   margin: 0%;
 }
-.principal{
-  background: url("fondodepantallaprincipal.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 body {
-  background-image: url(fondodepantallaprincipal.jpg);
+  background-image: url("../fondodepantallaprincipal.jpg");
+    background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
   background-color: $fondodepantalla;
 }
 .navbar {
@@ -93,4 +90,78 @@ h2 {
   width: 70px;
   padding: 5px;
   margin: 5px;
+}
+@media only screen and (min-width: 360px) {
+  body {
+    background-image: url("../fondodepantallaprincipal.jpg");
+    background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    background-color: rgb(37, 21, 21);
+  }
+@mixin fuentes2 {
+  font-size: 20px;
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+}
+  article {
+    @include fuentes2;
+    margin-left: $margen;
+  }
+  p {
+    @include fuentes2;
+    margin-left: $margen;
+  }
+  .texto {
+    @include fuentes2;
+  }
+  H3 {
+    @include fuentes2;
+    font-size: 30px;
+  }
+.logo{
+  height: 200px;
+  height: 200px;
+}
+.fotos{
+  text-align: center;
+}
+.fotodeviaje{
+  height: 360px;
+  width: 350px;
+}
+}
+@media only screen and (min-width: 720px)and (max-width: 1024px) {
+  body {
+    background-image: url("../fondotablet.jpeg");
+    background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+background-color: black;
+  }
+  @mixin fuentes3 {
+    font-size: 25px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  article {
+    @include fuentes3;
+    margin-left: $margen;
+  }
+  p {
+    @include fuentes3;
+    margin-left: $margen;
+  }
+  .texto {
+    @include fuentes3;
+  }
+  H3 {
+    @include fuentes3;
+    font-size: 30px;
+  }
+  .index{
+    margin-bottom: 30%;
+  }
 }
